@@ -47,8 +47,8 @@ public class WebSocketChatServer {
         onlineSessions.put(session.getId(), session);
 
         // username is not available in onOpen(). So when a new user David enters
-        // the chat room, the first message "David: online" is sent in WebSocket
-        // constructor and processed in onMessage with message.type ENTER.
+        // the chat room, the first message "David: online" is sent in getWebSocket()
+        // on client side and processed in onMessage() in server with message.type ENTER.
     }
 
     /**
