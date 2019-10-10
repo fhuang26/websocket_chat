@@ -13,6 +13,6 @@
 
 * When a user clicks CLOSE or [x] of a browser tab to leave the chat room, it will show a message like "David: offline" to rest online clients.
 
-* It takes some time (< 1 sec) for WebSocket to set up and reach a ready state to process messages. In chat.html, setTimeout() with 1.4 sec is used to hold for WebSocket to reach a stable state and then send the first message "David: online".
+* It takes some time (< 1 sec) for WebSocket to set up and reach a ready state to process messages. In chat.html, setTimeout() with 1.4 sec is used to hold for WebSocket to reach a stable state and then send the first message "David: online" to all online users.
 
 * During development on Java side, I turned on Run > Edit Config > Maven > 'Show console when a message is printed to standard output stream' to trace object flow on server and fix a few bugs.
